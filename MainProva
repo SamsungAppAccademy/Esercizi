@@ -1,0 +1,22 @@
+package figure;
+
+public class Prova {
+	public static void main(String[] args) {
+		Figura f1, f2, f3, f4, f5;
+		FiguraComposta fc = new FiguraComposta();
+		f1 = new Quadrato(3);
+		fc.aggiungi(0, f1);
+		f2 = new Cerchio(5);
+		fc.aggiungi(1, f2);
+		f3 = new Triangolo(3, 4);
+		fc.aggiungi(2, f3);
+		f4 = new Cerchio(2);
+		fc.aggiungi(3, f4);
+		f5 = new Quadrato(5);
+		fc.aggiungi(4, f5);
+		
+		System.out.println("L'area e' "+fc.area());
+
+	}
+
+}
