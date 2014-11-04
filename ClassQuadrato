@@ -1,0 +1,14 @@
+package figure;
+
+public class Quadrato extends Figura {
+	private int lato;
+	
+	public Quadrato(int l) {
+		lato = l;
+	}
+	@Override
+	public double area() {
+		return lato*lato;
+	}
+
+}
