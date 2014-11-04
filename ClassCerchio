@@ -1,0 +1,14 @@
+package figure;
+
+public class Cerchio extends Figura {
+	private int raggio;
+	
+	public Cerchio(int r) {
+		raggio = r;
+	}
+	@Override
+	public double area() {
+		return (raggio*raggio*Math.PI);
+	}
+
+}
