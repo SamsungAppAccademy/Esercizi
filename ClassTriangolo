@@ -1,0 +1,16 @@
+package figure;
+
+public class Triangolo extends Figura {
+	private int base; 
+	private int altezza;
+	
+	public Triangolo(int b, int a) {
+		base = b;
+		altezza = a;
+	}
+	@Override
+	public double area() {
+		return (base*altezza)/2;
+	}
+
+}
