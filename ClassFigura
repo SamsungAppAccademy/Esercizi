@@ -1,0 +1,5 @@
+package figure;
+
+abstract public class Figura {
+	abstract public double area();
+}
